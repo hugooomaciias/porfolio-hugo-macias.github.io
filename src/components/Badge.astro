@@ -1,3 +1,6 @@
-<span class={`bg-transparent border-2 text-white text-xs font-medium me-2 px-2.5 py-2 rounded-lg ${Astro.props.class}`}>
+<a class={`bg-transparent border-2 text-white text-xs font-medium me-2 px-2.5 py-2 rounded-lg ${Astro.props.class}`}
+    href={Astro.props.href}
+    target="_blank"
+    rel="noopener">
     <slot /> 
-</span>
+</a>
