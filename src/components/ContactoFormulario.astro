@@ -1,4 +1,6 @@
 ---
+import Mensaje from "./icons/MensajeIcon.astro";
+
 const { isSubmitting, submitSuccess } = Astro.props;
 ---
 
@@ -35,8 +37,9 @@ const { isSubmitting, submitSuccess } = Astro.props;
 
     <!-- Submit Button -->
     <div>
-        <button type="submit" class="inline-flex items-center justify-center h-12 px-6 py-2 bg-[#8367c7] rounded-xl">
+        <button type="submit" class="inline-flex items-center justify-center gap-x-2 h-12 px-6 py-2 bg-[#8367c7] rounded-xl">
             <span>Send Message</span>
+            <Mensaje class="size-6" />
         </button>
     </div>
 </form>
